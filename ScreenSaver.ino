@@ -13,7 +13,7 @@ void setup()
 
 void loop()
 {
-  secondDimRed();
+  secondDimRed(); //second is the amount of time, DimRed was maent to show the customized color//
   drawA();
     DisplaySlate();
     delay(1000);
@@ -28,7 +28,7 @@ void loop()
   drawC(); 
     EditColor(DimYellow, 6, 2, 0); 
     DisplaySlate();
-    delay(500);
+    delay(1000);
     ClearSlate();
   secondDimGreen();
   drawD();
@@ -46,7 +46,7 @@ void loop()
  drawF(); 
    EditColor(DimViolet, 3, 0, 2);  
     DisplaySlate();
-    delay(500);
+    delay(1000);
     ClearSlate();
   secondDimRed();
   drawG();
@@ -62,7 +62,7 @@ void loop()
   drawI(); 
     EditColor(DimYellow, 6, 2, 0); 
     DisplaySlate();
-    delay(500);
+    delay(1000);
     ClearSlate();
   secondDimGreen();
   drawJ();
@@ -80,13 +80,13 @@ void loop()
    drawL(); 
     EditColor(DimViolet, 3, 0, 2);  
     DisplaySlate();
-    delay(500);
+    delay(1000);
     ClearSlate();
 }
 
 void secondDimRed()
   {
-    for (int i = 0; i < 8; i++)
+    for (int i = 0; i < 8; i++) //originally, I wrote out 8 of these color lines. But after class, I switched to the double variable background//
     for (int a = 0; a < 8; a++)
       DrawPx(i, a, DimRed);
   }
@@ -120,7 +120,7 @@ void secondDimViolet()
      for (int a = 0; a < 8; a++)
       DrawPx(i, a, DimViolet);
   }
-void drawA()
+void drawA() //The letters have nothing to do with what's being drawn, it's just a name I gave for the different movements//
 {
   for (int x = 0; x < 4; x++)
     DrawPx(x, 0, White);
